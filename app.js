@@ -12,13 +12,13 @@ app.use(bodyParser.json());
 
 app.use('/timetable', houseRoutes);
 
-app.use((error, req, res, next) => {
-    res.status(err.status || 500);
-    res.json({
-        error:{
-            message: error.message
-        }
-    });
-});
+// app.use((error, req, res, next) => {
+//     res.status(err.status || 500);
+//     res.json({
+//         error:{
+//             message: error.message
+//         }
+//     });
+// });
 
 module.exports = app;
